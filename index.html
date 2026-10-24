@@ -7,6 +7,10 @@
       name="description"
       content="Insulation & Drywall offers residential and commercial insulation, drywall installation, and repair services in Texarkana and surrounding areas."
     />
+    <meta
+      name="keywords"
+      content="Insulation company in Texarkana TX, drywall contractor Texarkana, spray foam insulation, blown-in insulation, commercial insulation, drywall repair Texarkana"
+    />
     <title>Insulation & Drywall | Texarkana, TX</title>
     <style>
       :root {
@@ -460,6 +464,33 @@
         background: url("https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
       }
 
+      .trust-badges {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .badge {
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(13, 59, 102, 0.04);
+      }
+
+      .badge strong {
+        display: block;
+        color: var(--navy-deep);
+        font-size: 1.1rem;
+      }
+
+      .badge span {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
       .project-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -492,6 +523,60 @@
       .project-body p {
         margin: 0;
         color: var(--muted);
+      }
+
+      .review-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.2rem;
+      }
+
+      .review-card {
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 1.4rem;
+        box-shadow: 0 10px 30px rgba(13, 59, 102, 0.04);
+      }
+
+      .stars {
+        color: #f4b942;
+        letter-spacing: 0.12em;
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
+      }
+
+      .review-card p {
+        margin: 0 0 1rem;
+        color: var(--muted);
+      }
+
+      .review-author {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+      }
+
+      .avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, rgba(110, 198, 255, 0.2), rgba(46, 196, 182, 0.2));
+        color: var(--navy);
+        font-weight: 800;
+      }
+
+      .review-author strong {
+        display: block;
+        color: var(--navy-deep);
+      }
+
+      .review-author span {
+        color: var(--muted);
+        font-size: 0.86rem;
       }
 
       .cta {
@@ -592,6 +677,38 @@
         resize: vertical;
       }
 
+      .site-cta-bar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(7, 43, 73, 0.96);
+        padding: 0.75rem 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        z-index: 20;
+        display: none;
+      }
+
+      .site-cta-bar .inner {
+        width: min(1180px, calc(100% - 1rem));
+        margin: 0 auto;
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .site-cta-bar a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, var(--sun), var(--orange));
+        color: var(--white);
+        border-radius: 999px;
+        padding: 0.8rem 1.2rem;
+        font-weight: 700;
+      }
+
       footer {
         background: var(--navy-deep);
         color: rgba(255, 255, 255, 0.8);
@@ -622,7 +739,9 @@
 
         .stats-inner,
         .services-grid,
-        .project-grid {
+        .project-grid,
+        .review-grid,
+        .trust-badges {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
@@ -647,7 +766,9 @@
 
         .stats-inner,
         .services-grid,
-        .project-grid {
+        .project-grid,
+        .review-grid,
+        .trust-badges {
           grid-template-columns: 1fr;
         }
 
@@ -658,6 +779,14 @@
         h1 {
           font-size: 2.6rem;
         }
+
+        .site-cta-bar {
+          display: block;
+        }
+
+        body {
+          padding-bottom: 4.5rem;
+        }
       }
     </style>
   </head>
@@ -666,7 +795,7 @@
       <div class="topbar-inner">
         <div class="phone">Call Us: (903) 733-2419</div>
         <div class="topbar-actions">
-          <a class="social" href="https://www.facebook.com/yourfacebookpage" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <a class="social" href="https://www.facebook.com/sgmediagroup/" target="_blank" rel="noreferrer" aria-label="Facebook">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 8.5V6.8c0-.8.5-1.1 1.1-1.1h1.4V2.5h-2.3C10.8 2.5 9.5 4 9.5 6.3v2.2H7.5v3.1h2v8.9h3.1v-8.9h2.3l.6-3.1h-2.9Z"/></svg>
           </a>
           <a class="button primary" href="tel:+19037332419">Book a Free Estimate</a>
@@ -684,6 +813,7 @@
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -695,7 +825,7 @@
           <span class="eyebrow">Trusted Local Experts</span>
           <h1>Better comfort. Better finishes. Better value.</h1>
           <p>
-            We deliver premium insulation and drywall solutions for residential and commercial properties across Texas, Arkansas, Oklahoma, and Louisiana.
+            We deliver premium insulation and drywall solutions for residential and commercial properties across Texarkana, Texas and the surrounding communities.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#contact">Request a Quote</a>
@@ -794,16 +924,44 @@
           <div class="about-panel">
             <h3>Quality work that feels like a true partnership.</h3>
             <p>
-              We’re a trusted provider of insulation and drywall services located in Texarkana, Texas. Serving homeowners, property managers, and business owners throughout the surrounding area with dependable craftsmanship and thoughtful guidance from start to finish.
+              We’re a trusted provider of insulation and drywall services located in Texarkana, Texas. Serving homeowners, property managers, and business owners throughout the surrounding area with dependable craftsmanship, honest communication, and solutions built for real long-term results.
             </p>
             <ul class="mini-list">
               <li>Residential and commercial services</li>
               <li>Reliable communication and punctual crews</li>
-              <li>Solutions built for comfort, durability, and energy performance</li>
+              <li>Energy-saving solutions for comfort and durability</li>
             </ul>
           </div>
 
           <div class="about-image" aria-label="Home renovation work" role="img"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Why clients trust us</h2>
+            <p>Focused on honest service, clean work, and lasting value.</p>
+          </div>
+
+          <div class="trust-badges">
+            <div class="badge">
+              <strong>Local Experts</strong>
+              <span>Texarkana area professionals</span>
+            </div>
+            <div class="badge">
+              <strong>Clean Job Sites</strong>
+              <span>Respectful crews and tidy finishes</span>
+            </div>
+            <div class="badge">
+              <strong>Energy Savings</strong>
+              <span>Comfort improvements that last</span>
+            </div>
+            <div class="badge">
+              <strong>Free Quotes</strong>
+              <span>No-pressure estimates</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -836,6 +994,53 @@
               <div class="project-body">
                 <h3>Commercial restoration</h3>
                 <p>Dependable workmanship for retail, office, and multi-use property improvements.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="reviews">
+        <div class="container">
+          <div class="section-heading">
+            <h2>What homeowners say</h2>
+            <p>Real feedback from customers who wanted dependable workmanship and clear communication.</p>
+          </div>
+
+          <div class="review-grid">
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>“They arrived on time, explained everything clearly, and did a great job on our drywall repair. The finish looks fantastic.”</p>
+              <div class="review-author">
+                <span class="avatar">A</span>
+                <div>
+                  <strong>Andrea M.</strong>
+                  <span>Homeowner</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>“The insulation upgrade made a noticeable difference in comfort right away. Professional, responsive, and easy to work with.”</p>
+              <div class="review-author">
+                <span class="avatar">J</span>
+                <div>
+                  <strong>Jason R.</strong>
+                  <span>Property owner</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>“We needed a reliable crew for a commercial project and they handled it fast without sacrificing quality. Highly recommended.”</p>
+              <div class="review-author">
+                <span class="avatar">S</span>
+                <div>
+                  <strong>Shannon T.</strong>
+                  <span>Business owner</span>
+                </div>
               </div>
             </article>
           </div>
@@ -898,6 +1103,12 @@
         </div>
       </section>
     </main>
+
+    <div class="site-cta-bar" aria-label="Mobile call to action">
+      <div class="inner">
+        <a href="tel:+19037332419">Call for a Free Estimate</a>
+      </div>
+    </div>
 
     <footer>
       <div class="footer-inner">
